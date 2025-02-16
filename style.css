@@ -1124,9 +1124,27 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .projects-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Space between projects */
     }
+    
+    .project-card {
+        width: 45%; /* Reduce size to match service section */
+        height: auto; /* Adjust height automatically */
+        padding: 10px; /* Add some space inside */
+        text-align: center;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Add smooth edges */
+    }
+}
 }
 
 
